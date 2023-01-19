@@ -1,11 +1,22 @@
 {
   "name": "handout-generator",
   "version": "1.0.0",
-  "description": "Uses pdf-lib to generate a handout using the class Handout",
-  "main": "index.js",
-  "scripts": {},
-  "author": "",
+  "description": "Uses pdf-lib to generate a handout pdf using the class Handout",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "prepare": "npm run build"
+  },
+  "author": "Owen Truong",
   "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "Handout",
+    "PDF",
+    "Notes"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",

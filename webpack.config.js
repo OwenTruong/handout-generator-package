@@ -4,10 +4,10 @@ const nodeConfig = {
   name: 'Node',
   mode: process.env.NODE_ENV || 'development',
   target: 'node',
-  entry: './src/node.ts',
+  entry: './src/Handout.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: 'index.js',
   },
 
   module: {
