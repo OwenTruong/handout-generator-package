@@ -1,6 +1,6 @@
 {
   "name": "@owentruong/handout-generator-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Uses pdf-lib to generate a handout pdf using the class Handout",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
