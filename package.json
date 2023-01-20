@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Uses pdf-lib to generate a handout pdf using the class Handout",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack",
     "prepare": "npm run build"
@@ -37,6 +38,7 @@
   "dependencies": {
     "libreoffice-convert": "^1.4.1",
     "pdf-lib": "^1.17.1",
+    "ts-loader": "^9.4.2",
     "webpack-cli": "^4.10.0"
   }
 }

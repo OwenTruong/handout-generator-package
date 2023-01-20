@@ -1,9 +1,7 @@
 const path = require('path');
 
-const nodeConfig = {
-  name: 'Node',
+const config = {
   mode: process.env.NODE_ENV || 'development',
-  target: 'node',
   entry: './src/Handout.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -14,6 +12,13 @@ const nodeConfig = {
     rules: [
       {
         test: /\.ts$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader',
+        },
+      },
+      {
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -39,4 +44,4 @@ const nodeConfig = {
   // }
 };
 
-module.exports = nodeConfig;
+module.exports = config;
